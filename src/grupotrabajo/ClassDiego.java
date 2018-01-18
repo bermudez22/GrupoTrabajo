@@ -5,6 +5,8 @@
  */
 package grupotrabajo;
 
+import java.awt.Color;
+
 /**
  *
  * @author xp
@@ -16,6 +18,7 @@ public class ClassDiego extends javax.swing.JFrame {
      */
     public ClassDiego() {
         initComponents();
+        this.getContentPane().setBackground(Color.red);
     }
 
     /**
