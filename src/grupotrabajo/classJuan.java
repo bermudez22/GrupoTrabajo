@@ -5,6 +5,8 @@
  */
 package grupotrabajo;
 
+import java.awt.Color;
+
 /**
  *
  * @author juan
@@ -16,6 +18,7 @@ public class classJuan extends javax.swing.JFrame {
      */
     public classJuan() {
         initComponents();
+        this.getContentPane().setBackground(Color.green);
     }
 
     /**
