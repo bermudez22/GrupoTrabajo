@@ -60,16 +60,25 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="steven"/>
       </Properties>
+      <Events>
+        <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="stevenMousePressed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="Juan">
       <Properties>
         <Property name="text" type="java.lang.String" value="Juan"/>
       </Properties>
+      <Events>
+        <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="JuanMousePressed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="Diego">
       <Properties>
         <Property name="text" type="java.lang.String" value="Diego"/>
       </Properties>
+      <Events>
+        <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="DiegoMousePressed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

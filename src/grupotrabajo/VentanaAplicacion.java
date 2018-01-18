@@ -5,6 +5,8 @@
  */
 package grupotrabajo;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author juan
@@ -34,10 +36,25 @@ public class VentanaAplicacion extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         steven.setText("steven");
+        steven.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                stevenMousePressed(evt);
+            }
+        });
 
         Juan.setText("Juan");
+        Juan.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                JuanMousePressed(evt);
+            }
+        });
 
         Diego.setText("Diego");
+        Diego.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                DiegoMousePressed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -70,6 +87,23 @@ public class VentanaAplicacion extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void JuanMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JuanMousePressed
+        classJuan juan= new classJuan();
+        juan.setVisible(true);
+        juan.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        
+    }//GEN-LAST:event_JuanMousePressed
+
+    private void stevenMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_stevenMousePressed
+        
+    }//GEN-LAST:event_stevenMousePressed
+
+    private void DiegoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DiegoMousePressed
+        ClassDiego diego= new ClassDiego();
+        diego.setVisible(true);
+        diego.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+    }//GEN-LAST:event_DiegoMousePressed
+
     /**
      * @param args the command line arguments
      */
@@ -101,6 +135,9 @@ public class VentanaAplicacion extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new VentanaAplicacion().setVisible(true);
+                
+                new classJuan().setVisible(false);
+                new ClassDiego().setVisible(false);
             }
         });
     }
