@@ -95,7 +95,9 @@ public class VentanaAplicacion extends javax.swing.JFrame {
     }//GEN-LAST:event_JuanMousePressed
 
     private void stevenMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_stevenMousePressed
-        
+         ClassSteven steven= new ClassSteven();
+        steven.setVisible(true);
+        steven.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }//GEN-LAST:event_stevenMousePressed
 
     private void DiegoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DiegoMousePressed
