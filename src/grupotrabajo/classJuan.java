@@ -18,7 +18,7 @@ public class classJuan extends javax.swing.JFrame {
      */
     public classJuan() {
         initComponents();
-        this.getContentPane().setBackground(Color.blue);
+        this.getContentPane().setBackground(Color.pink);
     }
 
     /**
