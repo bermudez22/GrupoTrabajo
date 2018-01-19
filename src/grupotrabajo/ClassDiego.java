@@ -18,7 +18,7 @@ public class ClassDiego extends javax.swing.JFrame {
      */
     public ClassDiego() {
         initComponents();
-        this.getContentPane().setBackground(Color.GREEN);
+        this.getContentPane().setBackground(Color.YELLOW);
     }
 
     /**
