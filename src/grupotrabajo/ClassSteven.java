@@ -18,7 +18,7 @@ public class ClassSteven extends javax.swing.JFrame {
      */
     public ClassSteven() {
         initComponents();
-        this.getContentPane(). setBackground(Color.red);
+        this.getContentPane(). setBackground(Color.black);
     }
 
     /**
